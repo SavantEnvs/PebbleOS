@@ -1,0 +1,7 @@
+project: savantenvs/PebbleOS
+target: loader
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_loader
+    libfuzzer: true
+    timeout: 5

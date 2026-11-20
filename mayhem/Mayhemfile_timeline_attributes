@@ -1,0 +1,7 @@
+project: savantenvs/PebbleOS
+target: timeline-attributes
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_timeline_attributes
+    libfuzzer: true
+    timeout: 5

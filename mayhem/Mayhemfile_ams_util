@@ -1,0 +1,11 @@
+project: savantenvs/PebbleOS
+target: ams-util
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ams-util/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_ams_util
+    libfuzzer: true
+    timeout: 5

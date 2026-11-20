@@ -1,0 +1,7 @@
+project: savantenvs/PebbleOS
+target: ancs-util
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_ancs_util
+    libfuzzer: true
+    timeout: 5

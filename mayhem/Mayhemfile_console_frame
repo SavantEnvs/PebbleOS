@@ -1,0 +1,11 @@
+project: savantenvs/PebbleOS
+target: console-frame
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/console-frame/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_console_frame
+    libfuzzer: true
+    timeout: 5

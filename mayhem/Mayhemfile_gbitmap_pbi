@@ -1,0 +1,11 @@
+project: savantenvs/PebbleOS
+target: gbitmap-pbi
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gbitmap-pbi/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_gbitmap_pbi
+    libfuzzer: true
+    timeout: 5

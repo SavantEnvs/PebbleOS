@@ -1,0 +1,11 @@
+project: savantenvs/PebbleOS
+target: dict
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dict/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_dict
+    libfuzzer: true
+    timeout: 5

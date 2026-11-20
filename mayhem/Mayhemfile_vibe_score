@@ -1,0 +1,7 @@
+project: savantenvs/PebbleOS
+target: vibe-score
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_vibe_score
+    libfuzzer: true
+    timeout: 5
